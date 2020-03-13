@@ -112,8 +112,9 @@ ul::-webkit-scrollbar-thumb{
 	background-color: #EEEEEE;
 }
 #emoji,#img,#send{
-	width: 30%;
-	height: 64px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -8,6 +8,7 @@ $(function() {
 	// console.log(/^https?:\/\/\w+\.\w+.\w+/.test(url));
 	
 	
+	console.log($("#emoji").width());
 	
 	//dock栏头像
 	$("#bar").attr("src",$("#tx img").attr("src"));
