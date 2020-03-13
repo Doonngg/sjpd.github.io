@@ -3,10 +3,12 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-body{
+
+body {
 	background-color: #F9F9F9;
 }
-.head{
+
+.head {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -17,7 +19,8 @@ body{
 	align-items: flex-end;
 	background-color: #F9F9F9;
 }
-h1{
+
+h1 {
 	margin-top: 32px;
 	margin-left: 16px;
 	font-size: 1.5rem;
@@ -26,22 +29,28 @@ h1{
 /*弹幕显示区*/
 ul {
 	position: absolute;
-	top: 80px;
+	top: 70px;
 	right: 16px;
 	left: 16px;
 	bottom: 144px;
 	list-style: none;
 	overflow: auto;
-	word-break:break-all;
+	word-break: break-all;
 }
-ul::-webkit-scrollbar{
+.tab2,.tab3{
+	display: none;
+	bottom: 80px;
+}
+ul::-webkit-scrollbar {
 	width: 2px;
 }
-ul::-webkit-scrollbar-thumb{
+
+ul::-webkit-scrollbar-thumb {
 	background-color: #F6F6F6;
 }
+
 /*弹幕数量*/
-#dmNum {
+#dmNum,#olNum,#msg {
 	width: auto;
 	min-width: 20px;
 	height: 20px;
@@ -55,7 +64,8 @@ ul::-webkit-scrollbar-thumb{
 	line-height: 20px;
 	font-size: 12px;
 }
-#tips{
+
+#tips {
 	padding: 8px;
 	background: #000;
 	color: #ffffff;
@@ -76,19 +86,22 @@ ul::-webkit-scrollbar-thumb{
 	right: 16px;
 	background-color: #FFFFFF;
 }
+
 /*输入和发送按钮盒子*/
-.input-top{
-	height: 64px;
-	width: 100%;
+.input-top {
 	display: flex;
 	flex-direction: row;
-	position: relative;
-	z-index: 6;
-	box-shadow: 0 0 4px rgba(0,0,0,0.1);
+	position: fixed;
+	bottom: 80px;
+	left: 16px;
+	right: 16px;
+	height: 64px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+	z-index: 3;
 }
 
 /*弹幕输入框*/
-#text{
+#text {
 	width: 50%;
 	height: 64px;
 	border: none;
@@ -111,7 +124,10 @@ ul::-webkit-scrollbar-thumb{
 	align-items: center;
 	background-color: #EEEEEE;
 }
-#emoji,#img,#send{
+
+#emoji,
+#img,
+#send {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -120,24 +136,33 @@ ul::-webkit-scrollbar-thumb{
 	align-items: center;
 	cursor: pointer;
 }
-#emoji:hover,#img:hover,#send:hover{
+
+#emoji:hover,
+#img:hover,
+#send:hover {
 	background-color: #E5E5E5;
 }
-#emoji img,#img img,#send img{
+
+#emoji img,
+#img img,
+#send img {
 	width: 28px;
 	height: 28px;
 }
 
 
 /*弹幕设置和折叠按钮的盒子*/
-.input-center{
+.input-center {
 	height: 64px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 }
+
 /*底部四个按钮*/
-#HomePage,#bbs,#contact,#oneself{
+.dock,
+#home,
+#oneself {
 	height: 64px;
 	width: 25%;
 	background-color: #FFFFFF;
@@ -146,79 +171,84 @@ ul::-webkit-scrollbar-thumb{
 	align-items: center;
 }
 
-#HomePage img{
+#home img,
+.dock img {
 	width: 28px;
 	height: 28px;
 }
-#bbs img{
-	width: 28px;
-	height: 28px;
-}
-#contact img{
-	width: 28px;
-	height: 28px;
-}
-#oneself img{
+
+#oneself img {
 	width: 28px;
 	height: 28px;
 	border-radius: 50%;
 }
+
 /*发出弹幕的盒子*/
-.dmLi{
+.dmLi {
 	display: flex;
 	flex-direction: row;
 	padding: 8px;
+	padding-bottom: 0;
 	margin-bottom: 8px;
 }
+
 /*弹幕盒子左*/
-.dmLeft{
+.dmLeft {
 	width: auto;
 }
+
 /*弹幕盒子右*/
-.dmRight{
+.dmRight {
 	width: 100%;
 	margin-left: 8px;
 }
+
 /*弹幕时间和id*/
-.dmTime,.dmId{
+.dmTime,
+.dmId {
 	color: #4B4B4B;
 	font-size: 12px;
 }
+
 /*弹幕内容*/
-.dmText{
-	margin-top: 8px;
+.dmText {
+	margin-top: 4px;
 	font-size: 14px;
 }
+
 /*原有弹幕的头像样式*/
-.dmImg{
+.dmImg {
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
 }
 
 /*发送按钮下面的盒子*/
-.input-oneself{
+.fold {
 	width: 100%;
 	position: relative;
 	display: none;
 }
+
 /*个人信息盒子*/
-.personal-information{
+.personal-information {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	padding: 16px;
 	padding-bottom: 0;
 }
+
 /*头像*/
-#tx img{
+#tx img {
 	width: 64px;
 	height: 64px;
 	border-radius: 50%;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+
 /*昵称和邮箱的盒子*/
-#name{
+#name {
 	width: 100%;
 	height: auto;
 	margin-left: 12px;
@@ -227,22 +257,26 @@ ul::-webkit-scrollbar-thumb{
 	flex-direction: column;
 	justify-content: center;
 }
-#tishi{
+
+#tishi {
 	font-size: 12px;
 	margin-left: 4px;
 	color: #707070;
 }
+
 /*昵称*/
-#id{
+#id {
 	font-size: 18px;
 }
+
 /*邮箱*/
-#mail{
+#mail {
 	font-size: 14px;
 	color: #707070;
 }
+
 /*三个数据的盒子*/
-#data{
+#data {
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -251,7 +285,10 @@ ul::-webkit-scrollbar-thumb{
 	padding: 16px;
 	padding-bottom: 0;
 }
-#data1,#data2,#data3{
+
+#data1,
+#data2,
+#data3 {
 	flex-grow: 1;
 	height: auto;
 	padding: 4px;
@@ -264,21 +301,29 @@ ul::-webkit-scrollbar-thumb{
 	border: solid 1px #EEEEEE;
 	cursor: pointer;
 }
-#data3 img,#data2 img,#data1 img{
+
+#data3 img,
+#data2 img,
+#data1 img {
 	width: 16px;
 	height: 16px;
 }
-#num1,#num2,#num3{
+
+#num1,
+#num2,
+#num3 {
 	margin-left: 6px;
 	font-size: 12px;
 	font-weight: 400;
 }
-#data2{
+
+#data2 {
 	border-left: none;
 	border-right: none;
 }
+
 /*账号设置登出的盒子*/
-#tabs{
+#tabs {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -287,24 +332,27 @@ ul::-webkit-scrollbar-thumb{
 }
 
 /*账号设置*/
-#idSet{
+#idSet {
 	color: #5A9E5C;
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
 	font-size: 16px;
 }
-#idSet:hover{
+
+#idSet:hover {
 	text-decoration: underline;
 }
+
 /*退出登录*/
-#exit{
+#exit {
 	color: #707070;
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
 	font-size: 16px;
 }
-#set:hover{
+
+#set:hover {
 	text-decoration: underline;
 }

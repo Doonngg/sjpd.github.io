@@ -1,0 +1,68 @@
+/*tab2*/
+.tab2 li{
+	margin-top: 8px;
+}
+/*tab2上*/
+.lt-top{
+	width: 100%;
+	height: auto;
+	min-height: 16px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+/*图片们*/
+.lt-imgs{
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	margin-left: 8px;
+}
+/*tab2图片盒子*/
+.lt-img-box{
+	height: 64px;
+	width: auto;
+	overflow: hidden;
+	margin-right: 8px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+/*tab2图片*/
+.lt-img-box img{
+	height: 64px;
+	max-width: 128px;
+}
+/*打开按钮*/
+#open{
+	width: 24px;
+	height: 24px;
+}
+/*tab2中间部分*/
+.lt-center{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 48px;
+}
+.lt-center b{
+	font-size: 16px;
+	color: #707070;
+}
+.lt-center p{
+	font-size: 13px;
+	color: #707070;
+}
+.lt-bottom{
+	margin-top: 8px;
+	font-size: 14px;
+}
+.lt-center-bottom{
+	background-color: #FFFFFF;
+	padding: 8px;
+	margin-top: -48px;
+}
+#lt-text{
+	font-size: 13px;
+}

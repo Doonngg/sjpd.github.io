@@ -4,30 +4,31 @@ $(function() {
 	document.oncontextmenu = function(){
 	    event.returnValue = false;
 	} */
-	
+
 	// console.log(/^https?:\/\/\w+\.\w+.\w+/.test(url));
-	
-	
-	console.log($("#emoji").width());
-	
+
+
+
 	//dock栏头像
-	$("#bar").attr("src",$("#tx img").attr("src"));
-	
+	$("#bar").attr("src", $("#tx img").attr("src"));
+
 
 	//输入框获取焦点
 	$("#text").focus(function() {
-		$("#text").val("");
+		if ($("#text").val() == "输入内容") {
+			$("#text").val("");
+		}
 		$("#text").css({
-			"line-height" : "16px",
-			"padding" : "16px",
-			"text-align" : "start",
-			"color" : "#000000",
-			"font-size" : "12px"
+			"line-height": "16px",
+			"padding": "16px",
+			"text-align": "start",
+			"color": "#000000",
+			"font-size": "12px"
 		})
 	})
 
 
-	
+
 	//创建时间
 	var time = new Date();
 	//弹幕发射
@@ -42,51 +43,68 @@ $(function() {
 				$("#tips").css("display", "none");
 			}, 1000);
 			return;
-		} 
+		}
 		//弹幕设置面板隐藏
 		$(".dmset-show").css("display", "none");
 		//弹幕数量统计显示
 		$("#dn-num").fadeIn();
 		//创建弹幕&设置弹幕样式
-		var dmLi = $("<li></li>").attr("class","dmLi");
-		var dmLeft = $("<div></div>").attr("class","dmLeft");
+		var dmLi = $("<li></li>").attr("class", "dmLi");
+		var dmLeft = $("<div></div>").attr("class", "dmLeft");
 		dmLi.append(dmLeft);
-		var dmRight = $("<div></div>").attr("class","dmRight");
+		var dmRight = $("<div></div>").attr("class", "dmRight");
 		dmLi.append(dmRight);
 		//头像
 		var dmImg = $("<img>").attr("class", "dmImg").attr("src", $("#tx img").attr("src"));
 		dmLeft.append(dmImg);
-		var dmId = $("<p></p>").attr("class","dmId").text($("#id").text());
+		var dmId = $("<p></p>").attr("class", "dmId").text($("#id").text());
 		dmRight.append(dmId);
-		var dmTime = $("<p></p>").attr("class","dmTime").text(time.toLocaleString());
+		var dmTime = $("<p></p>").attr("class", "dmTime").text(time.toLocaleString());
 		dmRight.append(dmTime);
-		if(/^https?:\/\/\w+\.\w+.\w+/.test($("#text").val())){
-			var dmUrl = $("<a></a>").attr("class","dmUrl").attr("href",$("#text").val()).text("进入链接");
+		if (/^https?:\/\/\w+\.\w+.\w+/.test($("#text").val())) {
+			var dmUrl = $("<a></a>").attr("class", "dmUrl").attr("href", $("#text").val()).text("进入链接");
 			dmRight.append(dmUrl);
 		} else {
-			var dmText = $("<p></p>").attr("class","dmText").text($("#text").val());
+			var dmText = $("<p></p>").attr("class", "dmText").text($("#text").val());
 			dmRight.append(dmText);
 		}
-		
+
 		//把弹幕放进ul
-		$("ul").append(dmLi);
+		$("#tab1").append(dmLi);
 		//滚轮保持底部
 		$("ul").scrollTop($("ul")[0].scrollHeight);
 		//弹幕数量统计
-		$("#dmNum").text($("li").length);
+		$("#dmNum").text($("#dm li").length);
 		$("#text").val("");
 	});
-	
-	
-	$(".input-center div").click(function(){
-		$(this).css("background-color","#EEEEEE");
-		$(this).siblings().css("background-color","#FFFFFF");
+
+
+	//tab切换
+	$(".input-center div").click(function() {
+		$(this).css("background-color", "#EEEEEE");
+		$(this).siblings().css("background-color", "#FFFFFF");
+		const index = $(this).index();
+		$("ul").eq(index).css("display", "block").siblings("ul").css("display", "none");
+		$("h1").eq(index).css("display", "block").siblings("h1").css("display", "none");
+		$(".head p").eq(index).show().siblings("p").hide();
 	})
-	
+
+
+
 	//折叠部分
+	let flag = 0;
 	$("#oneself").click(function() {
-		$(".input-oneself").slideToggle(200);
+		if (flag == 0) {
+			$(".fold").slideDown(200);
+			$(".input-top").hide();
+			flag = 1;
+		} else {
+			$(".fold").slideUp(200, function() {
+				$(".input-top").show();
+			});
+			flag = 0;
+		}
 	});
-	
+
 
 });
