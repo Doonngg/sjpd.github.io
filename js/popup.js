@@ -59,10 +59,7 @@ $(function() {
 		dmRight.append(dmId);
 		var dmTime = $("<p></p>").attr("class","dmTime").text(time.toLocaleString());
 		dmRight.append(dmTime);
-		if(/images?|jpg|png|gif|webp/.test($("#text").val())){
-			var webImg = $("<img>").attr("class","webImg").attr("src",$("#text").val());
-			dmRight.append(webImg);
-		} else if(/^https?:\/\/\w+\.\w+.\w+/.test($("#text").val())){
+		if(/^https?:\/\/\w+\.\w+.\w+/.test($("#text").val())){
 			var dmUrl = $("<a></a>").attr("class","dmUrl").attr("href",$("#text").val()).text("进入链接");
 			dmRight.append(dmUrl);
 		} else {
@@ -87,7 +84,7 @@ $(function() {
 	
 	//折叠部分
 	$("#oneself").click(function() {
-		$(".input-oneself").slideToggle(300);
+		$(".input-oneself").slideToggle(200);
 	});
 	
 
