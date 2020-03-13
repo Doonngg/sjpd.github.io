@@ -87,7 +87,7 @@ $(function() {
 	
 	//折叠部分
 	$("#oneself").click(function() {
-		$(".input-oneself").slideToggle(300);
+		$(".input-oneself").slideToggle(200);
 	});
 	
 
