@@ -120,7 +120,7 @@ ul::-webkit-scrollbar-thumb{
 	cursor: pointer;
 }
 #emoji:hover,#img:hover,#send:hover{
-	background-color: #FFFFFF;
+	background-color: #E5E5E5;
 }
 #emoji img,#img img,#send img{
 	width: 28px;
@@ -224,6 +224,7 @@ ul::-webkit-scrollbar-thumb{
 	line-height: 24px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 #tishi{
 	font-size: 12px;
@@ -233,12 +234,10 @@ ul::-webkit-scrollbar-thumb{
 /*昵称*/
 #id{
 	font-size: 18px;
-	line-height: 32px;
 }
 /*邮箱*/
 #mail{
 	font-size: 14px;
-	line-height: 32px;
 	color: #707070;
 }
 /*三个数据的盒子*/
