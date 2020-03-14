@@ -6,7 +6,8 @@ $(function() {
 	} */
 
 	// console.log(/^https?:\/\/\w+\.\w+.\w+/.test(url));
-
+	
+	
 
 
 	//dock栏头像
@@ -74,7 +75,7 @@ $(function() {
 		//滚轮保持底部
 		$("ul").scrollTop($("ul")[0].scrollHeight);
 		//弹幕数量统计
-		$("#dmNum").text($("#dm li").length);
+		$("#dmNum").text($("#tab1 li").length);
 		$("#text").val("");
 	});
 
@@ -85,8 +86,7 @@ $(function() {
 		$(this).siblings().css("background-color", "#FFFFFF");
 		const index = $(this).index();
 		$("ul").eq(index).css("display", "block").siblings("ul").css("display", "none");
-		$("h1").eq(index).css("display", "block").siblings("h1").css("display", "none");
-		$(".head p").eq(index).show().siblings("p").hide();
+		$(".head div").eq(index).show().siblings("div").hide();
 	})
 
 

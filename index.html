@@ -8,22 +8,27 @@
 		<link rel="stylesheet" type="text/css" href="css/popup.css">
 		<link rel="stylesheet" type="text/css" href="css/login.css">
 		<link rel="stylesheet" type="text/css" href="css/lt.css">
+		<link rel="stylesheet" type="text/css" href="css/zj.css">
 		<script src="js/jQuery.js"></script>
 		<script src="js/popup.js"></script>
 		<script src="js/login.js"></script>
 		<script src="js/whiteList.js"></script>
+		<script src="js/lt.js"></script>
 		<meta charset="utf-8">
 		<title>世界频道</title>
 	</head>
 	<body>
 		<div class="popup-zhu">
 			<div class="head">
-				<h1>世界频道</h1>
-				<h1 style="display: none;">一频道</h1>
-				<h1 style="display: none;">通知</h1>
-				<p id="dmNum">0</p>
-				<p id="olNum" style="display: none;">在线数</p>
-				<p id="msg" style="display: none;">通知数</p>
+				<div class="bar1"><h1>世界频道</h1><p id="dmNum">0</p></div>
+				<div class="bar2">
+					<h1>一频道</h1>
+					<span>
+						<img id="sousuo" src="img/sousuo.png"/>
+						<img id="createTie" src="./img/fatie.png"/>
+					</span>
+				</div>
+				<div class="bar3"><h1>足迹</h1></div>
 			</div>
 			<div id="tips">内容不能为空</div>
 			<ul id="tab1">
@@ -37,41 +42,39 @@
 				</div>
 			</ul>
 			<ul class="tab2">
-				<li>
-					<div class="lt-top">
-						<div class="lt-imgs">
-							<div class="lt-img-box"><img src="img/lt/1.jpg"></div>
-							<div class="lt-img-box"><img src="img/lt/2.jpg"></div>
+				<li class="sendTie">
+						<div class="sendTie-center">
+							<P>选择板块</P>
+							<select>
+								<option>YOUTUBE</option>
+								<option>TWITTER</option>
+							</select>
 						</div>
-						<img id="open" src="img/open.png">
-					</div>
-					<div class="lt-center-bottom">
-						<div class="lt-center">
-							<b id="lt-name">诺曼贝茨</b>
-							<p id="lt-time">2020</p>
+						<textarea maxlength="80" class="sendTie-bottom"></textarea>
+						<div class="sendTie-top">
+							<div class="sendTie-file"><input type="file" name="tieImg"></div>
 						</div>
-						<div class="lt-bottom">
-							<p id="lt-text">可选的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。</p>
+						<div class="sendTie-button">
+							<p id="sendTie-cancel">取消</p>
+							<p id="sendTie-send">发帖</p>
 						</div>
-					</div>
+						
 				</li>
-				<li>
+				<li class="tie">
 					<div class="lt-top">
 						<div class="lt-imgs">
-							<div class="lt-img-box"><img src="img/lt/1.jpg"></div>
-							<div class="lt-img-box"><img src="img/lt/2.jpg"></div>
+							<img src="img/lt/1.jpg">
+							<img src="img/lt/2.jpg">
 						</div>
 						<img id="open" src="img/open.png">
 					</div>
-					<div class="lt-center-bottom">
 						<div class="lt-center">
 							<b id="lt-name">诺曼贝茨</b>
 							<p id="lt-time">2020</p>
 						</div>
 						<div class="lt-bottom">
-							<p id="lt-text">可选的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。</p>
+							<p id="lt-text">平林漠漠烟如织，寒山一带伤心碧。暝色入高楼，有人楼上愁。玉阶空伫立，宿鸟归飞急。何处是归程？长亭更短亭。</p>
 						</div>
-					</div>
 				</li>
 			</ul>
 			<ul class="tab3">
@@ -79,7 +82,6 @@
 			</ul>
 		</div>
 		<div class="input">
-
 			<div class="input-center">
 				<div id="home" style="background-color: #EEEEEE;"><img src="img/HomePage.png"></div>
 				<div class="dock"><img src="img/bbs.png"></div>

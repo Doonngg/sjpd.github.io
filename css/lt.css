@@ -1,68 +1,186 @@
 /*tab2*/
-.tab2 li{
-	margin-top: 8px;
+.tie,.newTie,.newTie-end{
+	background-color: #FFFFFF;
+	margin-top: 32px;
+	padding: 8px;
 }
 /*tab2上*/
-.lt-top{
+.lt-top,.newTop{
 	width: 100%;
 	height: auto;
-	min-height: 16px;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: space-between;
 }
 /*图片们*/
-.lt-imgs{
+.lt-imgs,.ltImgs{
 	width: auto;
 	height: auto;
 	display: flex;
 	flex-direction: row;
-	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: -24px;
+	overflow-x: scroll; /*添加横向滚动条*/
+	overflow-y: hidden;
+	white-space: nowrap;
 }
-/*tab2图片盒子*/
-.lt-img-box{
+.lt-imgs img{
 	height: 64px;
-	width: auto;
-	overflow: hidden;
 	margin-right: 8px;
 	box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+/*tab2单个图片盒子*/
+.lt-img-box,.ltImgBox{
+	height: 64px;
+	width: auto;
+	margin-right: 8px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+.ltImgBox img{
+	height: 64px;
 }
 /*tab2图片*/
 .lt-img-box img{
 	height: 64px;
-	max-width: 128px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
 /*打开按钮*/
-#open{
+#open,#openIcon{
 	width: 24px;
 	height: 24px;
 }
 /*tab2中间部分*/
-.lt-center{
+.lt-center,.newCenter{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-end;
-	margin-top: 48px;
+	margin-top: 16px;
 }
-.lt-center b{
-	font-size: 16px;
+.lt-center b,#newB,.newB{
+	font-size: 15px;
 	color: #707070;
+	margin-top: -16px;
 }
-.lt-center p{
+.lt-center p,#newP,.newP{
 	font-size: 13px;
 	color: #707070;
 }
-.lt-bottom{
+.lt-bottom,.newBottom{
 	margin-top: 8px;
 	font-size: 14px;
 }
 .lt-center-bottom{
 	background-color: #FFFFFF;
-	padding: 8px;
-	margin-top: -48px;
 }
-#lt-text{
+#lt-text,#newText{
 	font-size: 13px;
+}
+.bar2{
+	display: none;
+}
+.bar2 img{
+	width: 28px;
+	height: 28px;
+}
+.bar2 span{
+	height: 28px;
+	position: absolute;
+	right: 16px;
+	bottom: 0;
+}
+.sendTie-top{
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll; /*添加横向滚动条*/
+	overflow-y: hidden;
+	white-space: nowrap;
+	margin-top: 8px;
+}
+.sendTie-top::-webkit-scrollbar{
+	height: 1px;
+}
+.sendTie{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	padding: 8px;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+	display: none;
+}
+.sendTie-file{
+	width: 64px;
+	height: 64px;
+	margin-right: 8px;
+	background-image: url(../img/fatie.png);
+	background-position: center;
+}
+input[type="file"]{
+	width: 64px;
+	height: 64px;
+	opacity: 0;
+}
+.sendTie-center{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-size: 15px;
+	color: #707070;
+}
+.sendTie-center select{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+.sendTie-bottom{
+	width: 100%;
+	height: auto;
+	height: 32px;
+	border: none;
+	background-color: #F9F9F9;
+	resize: none;
+	outline: none;
+	padding: 8px;
+	font-size: 14px;
+	margin-top: 8px;
+}
+.sendTie-button{
+	color: #5A9E5C;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 15px;
+	margin-top: 8px;
+	cursor: pointer;
+}
+.newImgBox,.linshi{
+	height: 64px;
+	width: auto;
+	margin-right: 8px;
+	position: relative;
+}
+.newImg{
+	height: 64px;
+}
+.newDelete{
+	width: 16px;
+	height: 16px;
+	color: #FFFFFF;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.7);
+	background-image: url(../img/delete.png);
+	background-size: 16px 16px;
+	margin-top: -64px;
+	margin-left: 4px;
+	position: relative;
 }
