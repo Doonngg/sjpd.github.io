@@ -29,8 +29,8 @@ h1 {
 ul {
 	position: absolute;
 	top: 70px;
-	right: 0;
-	left: 0;
+	right: 16px;
+	left: 16px;
 	bottom: 144px;
 	list-style: none;
 	overflow: auto;
@@ -189,8 +189,7 @@ ul::-webkit-scrollbar-thumb {
 .dmLi {
 	display: flex;
 	flex-direction: row;
-	padding: 16px;
-	padding-top: 0;
+	margin-bottom: 8px;
 }
 
 /*弹幕盒子左*/
