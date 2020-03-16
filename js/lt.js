@@ -1,7 +1,6 @@
 $(function(){
 	
-	var nu = "  d  wad   "
-	console.log()
+	
 		
 	$("#createTie").click(function(){
 		$(".fold").slideUp(200,function(){
@@ -59,9 +58,21 @@ $(function(){
 			let img = $("<img>").attr("src",$(".newImg").attr("src"));
 			$(".ltImgs").append(img);
 		};
+		let banKuaiBox = $("<div></div>").attr("class","banKuaiBox");
+		$(".newTie").append(banKuaiBox);
+		let banKuai = $("<p></p>").attr("class","banKuai").text("#" + $("select").val());
+		$(".banKuaiBox").append(banKuai);
+		let tieIcon = $("<div></div>").attr("class","tieIconBox");
+		$(".newTie").append(tieIcon);
+		let zan = $("<img>").attr("class","zan").attr("src","img/zan.png");
+		$(".tieIconBox").append(zan);
+		let no = $("<img>").attr("class","no").attr("src","img/no.png");
+		$(".tieIconBox").append(no);
+		let msg = $("<img>").attr("class","msg").attr("src","img/msg.png");
+		$(".tieIconBox").append(msg);
+		banKuaiBox.attr("class","bkBox");
+		tieIcon.attr("class","iconBox");
 		ltImgs.attr("class","lt-imgs");
-		newB.attr("class","newB");
-		newP.attr("class","newP");
 		newBottom.attr("class","lt-bottom");
 		newCenter.attr("class","lt-center");
 		newTop.attr("class","lt-top");

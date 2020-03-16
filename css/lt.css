@@ -2,26 +2,19 @@
 .tie,.newTie,.newTie-end{
 	padding: 16px;
 	background-color: #FFFFFF;
-	border-top: solid 1px #FFFFFF;
-	border-bottom: solid 1px #FFFFFF;
 	margin-bottom: 8px;
 }
 /*tab2上*/
 .lt-top,.newTop{
 	width: 100%;
 	height: auto;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	justify-content: space-between;
 }
 /*图片们*/
-.lt-imgs,.ltImgs{
+.lt-imgs{
 	width: auto;
 	height: auto;
 	display: flex;
 	flex-direction: row;
-	margin-right: 8px;
 	overflow-x: scroll; /*添加横向滚动条*/
 	overflow-y: hidden;
 	white-space: nowrap;
@@ -31,56 +24,41 @@
 	margin-right: 8px;
 	margin-top: 16px;
 }
-/*tab2单个图片盒子*/
-.lt-img-box,.ltImgBox{
-	height: 64px;
-	width: auto;
-	margin-right: 8px;
-	box-shadow: 0 0 4px rgba(0,0,0,0.2);
-}
-.ltImgBox img{
-	height: 64px;
-}
 /*tab2图片*/
 .lt-img-box img{
 	height: 64px;
 	box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
 /*打开按钮*/
-#open,#openIcon{
+#openIcon{
 	width: 16px;
 	height: 16px;
 }
 /*tab2中间部分*/
-.lt-center,.newCenter{
+.lt-center{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-end;
 }
-.lt-center b,#newB,.newB{
+#newB{
 	font-size: 15px;
 	color: #707070;
 	margin-top: -16px;
 }
-.lt-center p,#newP,.newP{
+#newP{
 	font-size: 13px;
 	color: #707070;
 }
-.lt-bottom,.newBottom{
-	margin-top: 8px;
-	font-size: 14px;
-}
-.lt-center-bottom{
-	background-color: #FFFFFF;
-}
+
 .lt-text{
-	font-size: 13px;
+	font-size: 15px;
 	margin-top: 8px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
+/*搜索创建帖子*/
 .bar2{
 	display: none;
 }
@@ -187,4 +165,27 @@ input[type="file"]{
 	margin-top: -64px;
 	margin-left: 4px;
 	position: relative;
+}
+
+.iconBox{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+	width: 100%;
+	margin-top: 8px;
+}
+.bkBox{
+	width: 100%;
+	height: auto;
+	background-color: #F9F9F9;
+	font-size: 13px;
+	color: #707070;
+	margin-top: 8px;
+	padding: 4px;
+}
+
+.iconBox img{
+	width: 16px;
+	height: 16px;
 }
