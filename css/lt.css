@@ -72,6 +72,7 @@
 	right: 16px;
 	bottom: 0;
 }
+
 .sendTie-top{
 	display: flex;
 	flex-direction: row;
@@ -186,6 +187,6 @@ input[type="file"]{
 }
 
 .iconBox img{
-	width: 16px;
-	height: 16px;
+	width: 20px;
+	height: 20px;
 }

@@ -19,6 +19,26 @@ body {
 	background-color: #F9F9F9;
 }
 
+.bar1{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+.webList{
+	max-width: 120px;
+	width: auto;
+	height: auto;
+	padding: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	outline: none;
+	border: none;
+	font-size: 13px;
+	color: #707070;
+	margin-left: 8px;
+	background-color: #EEEEEE;
+	
+}
 h1 {
 	margin-top: 32px;
 	margin-left: 16px;
@@ -196,7 +216,16 @@ ul::-webkit-scrollbar-thumb {
 .dmLeft {
 	width: auto;
 }
-
+.dmRight1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.dmRight1 img{
+	width: 20px;
+	height: 20px;
+}
 /*弹幕盒子右*/
 .dmRight {
 	width: 100%;

@@ -58,8 +58,12 @@ $(function() {
 		//头像
 		var dmImg = $("<img>").attr("class", "dmImg").attr("src", $("#tx img").attr("src"));
 		dmLeft.append(dmImg);
+		let dmRight1 = $("<div></div>").attr("class", "dmRight1");
+		dmRight.append(dmRight1);
 		var dmId = $("<p></p>").attr("class", "dmId").text($("#id").text());
-		dmRight.append(dmId);
+		dmRight1.append(dmId);
+		let report = $("<img>").attr("src","img/report.png");
+		dmRight1.append(report);
 		var dmTime = $("<p></p>").attr("class", "dmTime").text(time.toLocaleString());
 		dmRight.append(dmTime);
 		if (/^https?:\/\/\w+\.\w+.\w+/.test($("#text").val())) {
@@ -69,7 +73,6 @@ $(function() {
 			var dmText = $("<p></p>").attr("class", "dmText").text($("#text").val());
 			dmRight.append(dmText);
 		}
-
 		//把弹幕放进ul
 		$("#tab1").append(dmLi);
 		//滚轮保持底部
@@ -77,8 +80,12 @@ $(function() {
 		//弹幕数量统计
 		$("#dmNum").text($("#tab1 li").length);
 		$("#text").val("");
+		
+		$(".dmRight1 img").click(function(){
+			console.log("举报");
+		})
 	});
-
+		
 
 	//tab切换
 	$(".input-center div").click(function() {

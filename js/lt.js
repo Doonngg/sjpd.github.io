@@ -17,7 +17,7 @@ $(function(){
 	$(".sendTie-file").click(function(){
 		let newImgBox = $("<div></div>").attr("class","linshi");
 		$(".sendTie-top").append(newImgBox);
-		let newImg = $("<img>").attr("class","newImg").attr("src","img/lt/2.jpg");
+		let newImg = $("<img>").attr("class","newImg").attr("src","img/lt/1.jpg");
 		$(".linshi").prepend(newImg);
 		let newDelete = $("<div></div>").attr("class","newDelete");
 		$(".linshi").append(newDelete);
@@ -79,6 +79,45 @@ $(function(){
 		newBottom.attr("class","lt-text");
 		newTie.removeClass().attr("class","newTie-end");
 		$(".tab2").scrollTop($(".tab2")[0].scrollHeight);
+		let flagzan = 0;
+		let flagno = 0;
+		let flagimg = 0;
+		$(".zan").click(function(e){
+			if(flagzan == 0){
+				$(e.target).attr("src","img/zanSelected.png");
+				flagzan = 1;
+			}else{
+				$(e.target).attr("src","img/zan.png");
+				flagzan = 0;
+			};
+			
+		});
+		$(".no").click(function(e){
+			if(flagno == 0){
+				$(e.target).attr("src","img/noSelected.png");
+				flagno = 1;
+			}else{
+				$(e.target).attr("src","img/no.png");
+				flagno = 0;
+			};
+			
+		});
+		$(".lt-top").click(function(e){
+			if(flagimg == 0){
+				$(e.target).css({
+					"width":"100%",
+					"height" : "100%",
+				});
+				flagimg = 1;
+			}else{
+				$(e.target).css({
+					"width":"",
+					"height" : "64px",
+				});
+				flagimg = 0;
+			}
+			
+		})
 	});
 	
 })
