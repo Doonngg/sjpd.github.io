@@ -1,8 +1,8 @@
 /*tab2*/
 .tie,.newTie,.newTie-end{
+	padding: 16px;
 	background-color: #FFFFFF;
-	margin-top: 32px;
-	padding: 8px;
+	margin-bottom: 8px;
 }
 /*tab2上*/
 .lt-top,.newTop{
@@ -20,7 +20,6 @@
 	display: flex;
 	flex-direction: row;
 	margin-right: 8px;
-	margin-top: -24px;
 	overflow-x: scroll; /*添加横向滚动条*/
 	overflow-y: hidden;
 	white-space: nowrap;
@@ -28,7 +27,7 @@
 .lt-imgs img{
 	height: 64px;
 	margin-right: 8px;
-	box-shadow: 0 0 4px rgba(0,0,0,0.2);
+	margin-top: 16px;
 }
 /*tab2单个图片盒子*/
 .lt-img-box,.ltImgBox{
@@ -47,8 +46,8 @@
 }
 /*打开按钮*/
 #open,#openIcon{
-	width: 24px;
-	height: 24px;
+	width: 16px;
+	height: 16px;
 }
 /*tab2中间部分*/
 .lt-center,.newCenter{
@@ -56,7 +55,6 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-end;
-	margin-top: 16px;
 }
 .lt-center b,#newB,.newB{
 	font-size: 15px;
@@ -74,8 +72,12 @@
 .lt-center-bottom{
 	background-color: #FFFFFF;
 }
-#lt-text,#newText{
+.lt-text{
 	font-size: 13px;
+	margin-top: 8px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 .bar2{
 	display: none;

@@ -38,7 +38,7 @@ $(function() {
 			$("#text").val("");
 		}
 		//判断输入长度
-		if ($("#text").val().length == 0 || $("#text").val().indexOf("  ") >= 0 || $("#text").val()[0] == " ") {
+		if ($("#text").val().length == 0 || /^\s+$/.test($("#text").val())) {
 			$("#tips").css("display", "block");
 			setTimeout(function() {
 				$("#tips").css("display", "none");
