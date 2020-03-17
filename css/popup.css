@@ -7,6 +7,7 @@
 body {
 	background-color: #F9F9F9;
 }
+
 .head {
 	position: fixed;
 	top: 0;
@@ -282,18 +283,19 @@ ul::-webkit-scrollbar-thumb {
 	width: 100%;
 	height: auto;
 	margin-left: 12px;
-	line-height: 24px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
 #tishi {
-	font-size: 12px;
-	margin-left: 4px;
+	font-size: 16px;
+	color: #000;
+}
+#suihe{
+	font-size: 13px;
 	color: #707070;
 }
-
 /*昵称*/
 #id {
 	font-size: 18px;
@@ -301,7 +303,7 @@ ul::-webkit-scrollbar-thumb {
 
 /*邮箱*/
 #mail {
-	font-size: 14px;
+	font-size: 13px;
 	color: #707070;
 }
 
@@ -310,7 +312,7 @@ ul::-webkit-scrollbar-thumb {
 	width: 100%;
 	height: auto;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: flex-start;
 	padding: 16px;
 	padding-bottom: 0;
@@ -321,14 +323,11 @@ ul::-webkit-scrollbar-thumb {
 #data3 {
 	flex-grow: 1;
 	height: auto;
-	padding: 4px;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	line-height: 40px;
 	display: flex;
 	flex-direction: row;
-	text-align: center;
+	justify-content: space-between;
 	align-items: center;
-	border: solid 1px #EEEEEE;
 	cursor: pointer;
 }
 
@@ -347,10 +346,7 @@ ul::-webkit-scrollbar-thumb {
 	font-weight: 400;
 }
 
-#data2 {
-	border-left: none;
-	border-right: none;
-}
+
 
 /*账号设置登出的盒子*/
 #tabs {

@@ -6,8 +6,16 @@ $(function() {
 	} */
 
 	// console.log(/^https?:\/\/\w+\.\w+.\w+/.test(url));
+	$("#data3").click(function(){
+		
+	})
 	
-	
+	$("#data").mousedown(function(e){
+		$(e.target).css("background-color","#eeeeee");
+	});
+	$("#data").mouseup(function(e){
+		$(e.target).css("background-color","#ffffff");
+	});
 
 
 	//dock栏头像
