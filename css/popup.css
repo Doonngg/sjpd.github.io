@@ -272,29 +272,34 @@ ul::-webkit-scrollbar-thumb {
 
 /*头像*/
 #tx img {
-	width: 64px;
-	height: 64px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 /*昵称和邮箱的盒子*/
 #name {
 	width: 100%;
 	height: auto;
-	margin-left: 12px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-left: 8px;
 }
 
 #tishi {
 	font-size: 16px;
 	color: #000;
+	margin-left: 8px;
 }
 #suihe{
 	font-size: 13px;
 	color: #707070;
+	margin-left: 16px;
+	margin-top: 16px;
+}
+#suihe span{
+	color: #000000;
 }
 /*昵称*/
 #id {
@@ -326,7 +331,6 @@ ul::-webkit-scrollbar-thumb {
 	line-height: 40px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	align-items: center;
 	cursor: pointer;
 }
@@ -334,8 +338,8 @@ ul::-webkit-scrollbar-thumb {
 #data3 img,
 #data2 img,
 #data1 img {
-	width: 16px;
-	height: 16px;
+	width: 24px;
+	height: 24px;
 }
 
 #num1,
