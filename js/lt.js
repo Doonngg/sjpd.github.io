@@ -48,8 +48,6 @@ $(function(){
 		$(".newTie").append(newBottom);
 		let newText = $("<p></p>").attr("id","newText").text($(".sendTie-bottom").val());
 		$(".newBottom").append(newText);
-		let openIcon = $("<img>").attr("id","openIcon").attr("src","img/open.png");
-		$(".newBottom").append(openIcon);
 		let newTop =$("<div></div>").attr("class","newTop");
 		$(".newTie").append(newTop);
 		let ltImgs = $("<div></div>").attr("class","ltImgs");

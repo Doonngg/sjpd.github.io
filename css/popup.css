@@ -116,10 +116,10 @@ ul::-webkit-scrollbar-thumb {
 	display: flex;
 	flex-direction: row;
 	position: fixed;
-	bottom: 80px;
+	bottom: 72px;
 	left: 16px;
 	right: 16px;
-	height: 64px;
+	height: 56px;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 	z-index: 3;
 }
@@ -127,21 +127,21 @@ ul::-webkit-scrollbar-thumb {
 /*弹幕输入框*/
 #text {
 	width: 50%;
-	height: 64px;
+	height: 56px;
 	border: none;
 	border-radius: 0;
 	resize: none;
 	outline: none;
 	font-size: 14px;
 	text-align: center;
-	line-height: 62px;
+	line-height: 56px;
 	color: #707070;
 }
 
 /*发送按钮*/
 #button {
 	width: 50%;
-	height: 64px;
+	height: 56px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -177,7 +177,7 @@ ul::-webkit-scrollbar-thumb {
 
 /*弹幕设置和折叠按钮的盒子*/
 .input-center {
-	height: 64px;
+	height: 56px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -187,7 +187,7 @@ ul::-webkit-scrollbar-thumb {
 .dock,
 #home,
 #oneself {
-	height: 64px;
+	height: 56px;
 	width: 25%;
 	background-color: #FFFFFF;
 	display: flex;
