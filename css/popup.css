@@ -27,7 +27,6 @@ body {
 
 .webList{
 	max-width: 120px;
-	width: auto;
 	height: auto;
 	padding: 2px;
 	padding-left: 8px;
@@ -50,17 +49,17 @@ h1 {
 /*弹幕显示区*/
 ul {
 	position: absolute;
-	top: 70px;
+	top: 62px;
 	right: 16px;
 	left: 16px;
-	bottom: 144px;
+	bottom: 128px;
 	list-style: none;
 	overflow: auto;
 	word-break: break-all;
 }
 .tab2,.tab3{
 	display: none;
-	bottom: 80px;
+	bottom: 72px;
 }
 ul::-webkit-scrollbar {
 	width: 2px;
@@ -127,7 +126,7 @@ ul::-webkit-scrollbar-thumb {
 /*弹幕输入框*/
 #text {
 	width: 50%;
-	height: 56px;
+	height: 100%;
 	border: none;
 	border-radius: 0;
 	resize: none;
@@ -141,7 +140,7 @@ ul::-webkit-scrollbar-thumb {
 /*发送按钮*/
 #button {
 	width: 50%;
-	height: 56px;
+	height: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -187,7 +186,7 @@ ul::-webkit-scrollbar-thumb {
 .dock,
 #home,
 #oneself {
-	height: 56px;
+	height: 100%;
 	width: 25%;
 	background-color: #FFFFFF;
 	display: flex;

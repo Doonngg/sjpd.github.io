@@ -36,7 +36,7 @@ $(function(){
 			return;
 		}
 		let newTie = $("<li></li>").attr("class","newTie");
-		$(".tab2").append(newTie);
+		$(".tab2").prepend(newTie);
 		let newCenter = $("<div></div>").attr("class","newCenter");
 		$(".newTie").append(newCenter);
 		let newB = $("<b></b>").attr("id","newB").text($("#id").text());
@@ -76,7 +76,6 @@ $(function(){
 		newTop.attr("class","lt-top");
 		newBottom.attr("class","lt-text");
 		newTie.removeClass().attr("class","newTie-end");
-		$(".tab2").scrollTop($(".tab2")[0].scrollHeight);
 		let flagzan = 0;
 		let flagno = 0;
 		let flagimg = 0;
