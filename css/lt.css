@@ -175,14 +175,20 @@ input[type="file"]{
 	margin-left: 4px;
 	position: relative;
 }
-
-.iconBox{
+.tieButton{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-end;
-	width: 100%;
+	justify-content: space-between;
+	align-items: flex-start;
 	margin-top: 8px;
+}
+.iconBox,.tieIconBox{
+	width: 30%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 .bkBox{
 	width: 100%;
@@ -194,7 +200,16 @@ input[type="file"]{
 	padding: 4px;
 }
 
-.iconBox img{
-	width: 20px;
-	height: 20px;
+.iconBox img,.tieIconBox img{
+	width: 24px;
+	height: 24px;
+}
+
+.xueLiang{
+	display: flex;
+	flex-direction: column;
+	line-height: 18px;
+	font-size: 10px;
+	color: #707070;
+	font-weight: 100;
 }

@@ -60,14 +60,22 @@ $(function(){
 		$(".newTie").append(banKuaiBox);
 		let banKuai = $("<p></p>").attr("class","banKuai").text("#" + $("select").val());
 		$(".banKuaiBox").append(banKuai);
+		let tieButton =  $("<div></div>").attr("class","tieButton1");
+		$(".newTie").append(tieButton);
+		let xueLiang = $("<div></div>").attr("class","xueLiang1");
+		$(".tieButton1").append(xueLiang);
+		let xueLiangVal = $("<span></span>").attr("class","xueLiangVal").text("血量 " + 100);
+		$(".xueLiang1").append(xueLiangVal);
+		let huiFuVal = $("<span></span>").attr("class","huiFuVal").text("留言 " + 100);
+		$(".xueLiang1").append(huiFuVal);
 		let tieIcon = $("<div></div>").attr("class","tieIconBox");
-		$(".newTie").append(tieIcon);
-		let zan = $("<img>").attr("class","zan").attr("src","img/zan.png");
+		$(".tieButton1").append(tieIcon);
+		let zan = $("<img>").attr("class","zan").attr("src","img/jiaxue.png");
 		$(".tieIconBox").append(zan);
-		let no = $("<img>").attr("class","no").attr("src","img/no.png");
+		let no = $("<img>").attr("class","no").attr("src","img/jianxue.png");
 		$(".tieIconBox").append(no);
-		let msg = $("<img>").attr("class","msg").attr("src","img/msg.png");
-		$(".tieIconBox").append(msg);
+		xueLiang.attr("class","xueLiang")
+		tieButton.attr("class","tieButton")
 		banKuaiBox.attr("class","bkBox");
 		tieIcon.attr("class","iconBox");
 		ltImgs.attr("class","lt-imgs");
@@ -81,20 +89,20 @@ $(function(){
 		let flagimg = 0;
 		$(".zan").click(function(e){
 			if(flagzan == 0){
-				$(e.target).attr("src","img/zanSelected.png");
+				$(e.target).attr("src","img/jiaxue2.png");
 				flagzan = 1;
 			}else{
-				$(e.target).attr("src","img/zan.png");
+				$(e.target).attr("src","img/jiaxue.png");
 				flagzan = 0;
 			};
 			
 		});
 		$(".no").click(function(e){
 			if(flagno == 0){
-				$(e.target).attr("src","img/noSelected.png");
+				$(e.target).attr("src","img/jianxue2.png");
 				flagno = 1;
 			}else{
-				$(e.target).attr("src","img/no.png");
+				$(e.target).attr("src","img/jianxue.png");
 				flagno = 0;
 			};
 			
