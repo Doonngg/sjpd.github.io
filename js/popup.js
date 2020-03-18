@@ -6,10 +6,10 @@ $(function() {
 	} */
 
 	// console.log(/^https?:\/\/\w+\.\w+.\w+/.test(url));
-	$("#data3").click(function(){
-		
+	$("#data3").click(function() {
+
 	})
-	
+
 
 
 	//dock栏头像
@@ -64,7 +64,7 @@ $(function() {
 		dmRight.append(dmRight1);
 		var dmId = $("<p></p>").attr("class", "dmId").text($("#id").text());
 		dmRight1.append(dmId);
-		let report = $("<img>").attr("src","img/report.png");
+		let report = $("<img>").attr("src", "img/report.png");
 		dmRight1.append(report);
 		var dmTime = $("<p></p>").attr("class", "dmTime").text(time.toLocaleString());
 		dmRight.append(dmTime);
@@ -82,12 +82,12 @@ $(function() {
 		//弹幕数量统计
 		$("#dmNum").text($("#tab1 li").length);
 		$("#text").val("");
-		
-		$(".dmRight1 img").click(function(){
+
+		$(".dmRight1 img").click(function() {
 			console.log("举报");
 		})
 	});
-		
+
 
 	//tab切换
 	$(".input-center div").click(function() {

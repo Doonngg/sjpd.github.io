@@ -28,21 +28,22 @@
 				</div>
 				<div class="bar2">
 					<div class="bar2Top">
-						<h1>一频道</h1>
-						<span>
-							<img id="sousuo" src="img/sousuo.png"/>
-							<img id="createTie" src="./img/fatie.png"/>
-						</span>
-					</div>
-					<div class="tuijian">
-						<div class="tieClass">
-							<div class="tieTab1">新回</div>
-							<div class="tieTab2">新帖</div>
-							<div class="tieTab3">热帖</div>
-						</div>
+						<select class="tieBankuai">
+							<option>请选择板块</option>
+							<option>YOUTUBE</option>
+							<option>TWITTER</option>
+						</select>
+						<select class="tieClass">
+							<option>新帖</option>
+							<option>新回复</option>
+							<option>热帖</option>
+						</select>
+						<input type="text" name="souTie" value="搜索" id="souTie" />
 					</div>
 				</div>
-				<div class="bar3"><h1>足迹</h1></div>
+				<div class="bar3">
+					<h1>足迹</h1>
+				</div>
 			</div>
 			<div id="tips">内容不能为空</div>
 			<ul id="tab1">
@@ -56,23 +57,24 @@
 				</div>
 			</ul>
 			<ul id="tab2">
+				<img src="img/logo.png" id="createTie">
 				<li class="sendTie">
-						<div class="sendTie-center">
-							<P>选择板块</P>
-							<select>
-								<option>YOUTUBE</option>
-								<option>TWITTER</option>
-							</select>
-						</div>
-						<textarea maxlength="80" class="sendTie-bottom"></textarea>
-						<div class="sendTie-top">
-							<div class="sendTie-file"><input type="file" name="tieImg"></div>
-						</div>
-						<div class="sendTie-button">
-							<p id="sendTie-cancel">取消</p>
-							<p id="sendTie-send">发帖</p>
-						</div>
-						
+					<div class="sendTie-center">
+						<P>选择板块</P>
+						<select>
+							<option>YOUTUBE</option>
+							<option>TWITTER</option>
+						</select>
+					</div>
+					<textarea maxlength="80" class="sendTie-bottom"></textarea>
+					<div class="sendTie-top">
+						<div class="sendTie-file"><input type="file" name="tieImg"></div>
+					</div>
+					<div class="sendTie-button">
+						<p id="sendTie-cancel">取消</p>
+						<p id="sendTie-send">发帖</p>
+					</div>
+
 				</li>
 			</ul>
 			<ul id="tab3">
@@ -100,20 +102,20 @@
 					<div id="data1">
 						<img src="img/history.png">
 						<p id="tishi">历史留言</p>
-						
+
 					</div>
 					<div id="data2">
 						<img src="img/footprint.png">
 						<p id="tishi">浏览足迹</p>
-						
+
 					</div>
 					<div id="data3">
 						<img src="img/mytie.png">
 						<p id="tishi">我的帖子</p>
-						
+
 					</div>
 				</div>
-				
+
 				<div id="tabs">
 					<a id="idSet" href="">账号设置</a>
 					<a id="exit" href="">登出</a>

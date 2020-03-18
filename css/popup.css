@@ -20,11 +20,12 @@ body {
 	z-index: 5;
 }
 
-#homeLogo{
+#homeLogo {
 	width: 32px;
 	height: 32px;
 }
-.bar1{
+
+.bar1 {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -36,7 +37,8 @@ body {
 	flex-direction: column;
 	align-items: flex-end;
 }
-.bar1Top{
+
+.bar1Top {
 	display: flex;
 	width: 100%;
 	flex-direction: row;
@@ -44,7 +46,7 @@ body {
 	align-items: flex-end;
 }
 
-.webList{
+.webList {
 	width: 100%;
 	height: 24px;
 	padding: 8px;
@@ -56,13 +58,17 @@ body {
 	color: #707070;
 	background-color: #EEEEEE;
 }
+
 h1 {
 	font-size: 1.5rem;
 	line-height: 24px;
 }
-#tab1{
+
+#tab1 {
 	top: 96px;
+	padding-top: 0;
 }
+
 /*弹幕显示区*/
 ul {
 	position: absolute;
@@ -75,10 +81,12 @@ ul {
 	overflow: auto;
 	word-break: break-all;
 }
-#tab3{
+
+#tab3 {
 	display: none;
 	bottom: 72px;
 }
+
 ul::-webkit-scrollbar {
 	width: 2px;
 }
@@ -231,16 +239,19 @@ ul::-webkit-scrollbar-thumb {
 .dmLeft {
 	width: auto;
 }
-.dmRight1{
+
+.dmRight1 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
+
 .dmRight1 img {
 	width: 20px;
 	height: 20px;
 }
+
 /*弹幕盒子右*/
 .dmRight {
 	width: 100%;
@@ -305,15 +316,18 @@ ul::-webkit-scrollbar-thumb {
 	color: #000;
 	margin-left: 8px;
 }
-#suihe{
+
+#suihe {
 	font-size: 13px;
 	color: #707070;
 	margin-left: 16px;
 	margin-top: 16px;
 }
-#suihe span{
+
+#suihe span {
 	color: #000000;
 }
+
 /*昵称*/
 #id {
 	font-size: 18px;
