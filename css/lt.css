@@ -1,8 +1,7 @@
 /*tab2*/
 .tie,.newTie,.newTie-end{
-	padding: 16px;
-	background-color: #FFFFFF;
-	margin-bottom: 8px;
+	border-bottom: solid 1px #EEEEEE;
+	margin-top: 8px;
 }
 /*tab2上*/
 .lt-top,.newTop{
@@ -21,7 +20,7 @@
 }
 .lt-imgs img{
 	height: 64px;
-	margin-right: 8px;
+	margin-right: 1px;
 	margin-top: 16px;
 }
 /*tab2图片*/
