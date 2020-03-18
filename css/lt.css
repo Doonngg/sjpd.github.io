@@ -80,7 +80,7 @@
 	padding: 16px;
 	padding-top: 32px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	display: none;
 }
 
@@ -90,6 +90,7 @@
 }
 .bar2Top{
 	display: flex;
+	width: 100%;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
