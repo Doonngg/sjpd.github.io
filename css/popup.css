@@ -227,7 +227,6 @@ ul::-webkit-scrollbar-thumb {
 .dmLi {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 8px;
 	margin-top: 16px;
 }
 
