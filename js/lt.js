@@ -39,7 +39,7 @@ $(function(){
 		$(".tab2").prepend(newTie);
 		let newCenter = $("<div></div>").attr("class","newCenter");
 		$(".newTie").append(newCenter);
-		let newB = $("<b></b>").attr("id","newB").text($("#id").text());
+		let newB = $("<p></p>").attr("id","newB").text($("#id").text());
 		$(".newCenter").append(newB);
 		let newP = $("<p></p>").attr("id","newP").text(time.toLocaleString());
 		$(".newCenter").append(newP);
