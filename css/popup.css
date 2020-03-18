@@ -17,6 +17,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	z-index: 5;
 }
 
 #homeLogo{
@@ -73,7 +74,6 @@ ul {
 	list-style: none;
 	overflow: auto;
 	word-break: break-all;
-	z-index: -1;
 }
 #tab3{
 	display: none;
