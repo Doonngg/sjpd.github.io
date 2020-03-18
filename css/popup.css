@@ -17,18 +17,26 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	background-color: #F9F9F9;
 }
 
+#homeLogo{
+	width: 32px;
+	height: 32px;
+}
 .bar1{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0px;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	align-items: flex-end;
 }
 
 .webList{
-	max-width: 120px;
-	height: auto;
+	width: 40%;
+	height: 24px;
 	padding: 2px;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -50,7 +58,7 @@ h1 {
 /*弹幕显示区*/
 ul {
 	position: absolute;
-	top: 62px;
+	top: 72px;
 	right: 16px;
 	left: 16px;
 	bottom: 128px;
@@ -72,20 +80,18 @@ ul::-webkit-scrollbar-thumb {
 
 /*弹幕数量*/
 #dmNum {
-	position: absolute;
-	right: 0;
-	bottom: 0;
 	width: auto;
-	min-width: 20px;
-	height: 20px;
+	min-width: 24px;
+	height: 24px;
+	margin-right: 16px;
+	margin-left: 8px;
 	padding-left: 4px;
 	padding-right: 4px;
 	background-color: #5A9E5C;
-	border-radius: 10px;
+	border-radius: 16px;
 	color: #ffffff;
-	margin-right: 16px;
 	text-align: center;
-	line-height: 20px;
+	line-height: 24px;
 	font-size: 12px;
 }
 

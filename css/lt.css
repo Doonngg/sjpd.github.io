@@ -1,7 +1,7 @@
 /*tab2*/
 .tie,.newTie,.newTie-end{
 	border-bottom: solid 1px #EEEEEE;
-	margin-top: 8px;
+	margin-top: 16px;
 }
 /*tab2上*/
 .lt-top,.newTop{
@@ -177,14 +177,14 @@ input[type="file"]{
 }
 .tieButton{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-top: 8px;
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 .iconBox{
-	width: 30%;
-	margin-top: 8px;
+	width: 32%;
 	height: auto;
 	display: flex;
 	flex-direction: row;
@@ -194,11 +194,11 @@ input[type="file"]{
 .bkBox{
 	width: 100%;
 	height: auto;
-	background-color: #F9F9F9;
+	background-color: #F2F2F2;
 	font-size: 13px;
 	color: #707070;
 	margin-top: 16px;
-	padding: 4px;
+	padding: 8px;
 }
 
 .iconBox img,.tieIconBox img{
