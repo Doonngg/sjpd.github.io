@@ -177,13 +177,14 @@ input[type="file"]{
 }
 .tieButton{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
 	margin-top: 8px;
 }
-.iconBox,.tieIconBox{
+.iconBox{
 	width: 30%;
+	margin-top: 8px;
 	height: auto;
 	display: flex;
 	flex-direction: row;
@@ -201,15 +202,19 @@ input[type="file"]{
 }
 
 .iconBox img,.tieIconBox img{
-	width: 24px;
-	height: 24px;
+	width: 28px;
+	height: 28px;
 }
 
 .xueLiang{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	width: 100%;
 	line-height: 18px;
 	font-size: 10px;
 	color: #707070;
 	font-weight: 100;
+}
+.huiFuVal{
+	margin-left: 8px;
 }
