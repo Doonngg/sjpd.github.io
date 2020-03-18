@@ -117,7 +117,7 @@
 	outline: none;
 	color: #707070;
 	background-color: #EEEEEE;
-	border-radius: 0 12px 12px 0;
+	border-radius: 0 16px 16px 0;
 }
 
 /*帖子板块*/
@@ -129,7 +129,7 @@
 	font-size: 14px;
 	line-height: 24px;
 	background-color: #EEEEEE;
-	border-radius: 12px 0 0 12px;
+	border-radius: 16px 0 0 16px;
 	-webkit-appearance:none;
 }
 
