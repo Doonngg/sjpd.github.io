@@ -113,7 +113,7 @@
 	height: 32px;
 	border-radius: 0;
 	padding-left: 8px;
-	font-size: 14px;
+	font-size: 13px;
 	outline: none;
 	color: #707070;
 	background-color: #EEEEEE;
@@ -126,7 +126,7 @@
 	height: 32px;
 	color: #707070;
 	padding-left: 8px;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 24px;
 	background-color: #EEEEEE;
 	border-radius: 16px 0 0 16px;
@@ -137,7 +137,7 @@
 .tieClass {
 	width: 33%;
 	height: 32px;
-	font-size: 14px;
+	font-size: 13px;
 	padding-left: 8px;
 	color: #707070;
 	background-color: #EEEEEE;
