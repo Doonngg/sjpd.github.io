@@ -25,10 +25,9 @@ body {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: 16px;
 	height: 96px;
 	padding: 16px;
-	padding-top: 32px;
 	display: flex;
 	flex-direction: column;
 }
@@ -94,8 +93,8 @@ ul::-webkit-scrollbar-thumb {
 /*弹幕数量*/
 #dmNum {
 	width: auto;
-	min-width: 24px;
-	height: 24px;
+	min-width: 20px;
+	height: 20px;
 	margin-left: 8px;
 	padding-left: 4px;
 	padding-right: 4px;
@@ -103,7 +102,7 @@ ul::-webkit-scrollbar-thumb {
 	border-radius: 16px;
 	color: #ffffff;
 	text-align: center;
-	line-height: 24px;
+	line-height: 20px;
 	font-size: 12px;
 }
 
