@@ -109,7 +109,7 @@
 	border: none;
 	height: 24px;
 	border-radius: 0;
-	padding: 8px;
+	padding-left: 8px;
 	font-size: 14px;
 	outline: none;
 	color: #707070;
@@ -122,10 +122,12 @@
 	width: 33%;
 	height: 24px;
 	color: #707070;
+	padding-left: 8px;
 	font-size: 14px;
 	line-height: 24px;
 	background-color: #EEEEEE;
 	border-radius: 12px 0 0 12px;
+	-webkit-appearance:none;
 }
 
 /*新回复热帖新帖*/
@@ -133,8 +135,10 @@
 	width: 33%;
 	height: 24px;
 	font-size: 14px;
+	padding-left: 8px;
 	color: #707070;
 	background-color: #EEEEEE;
+	-webkit-appearance:none;
 }
 
 
