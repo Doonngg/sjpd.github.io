@@ -37,13 +37,13 @@ $(function(){
 		}
 		let newTie = $("<li></li>").attr("class","newTie");
 		$(".tab2").prepend(newTie);
-		let newCenter = $("<div></div>").attr("class","newCenter");
+		/* let newCenter = $("<div></div>").attr("class","newCenter");
 		$(".newTie").append(newCenter);
 		let newB = $("<p></p>").attr("id","newB").text($("#id").text());
 		$(".newCenter").append(newB);
 		let newP = $("<p></p>").attr("id","newP").text(time.toLocaleString());
 		$(".newCenter").append(newP);
-		newCenter.attr("class","lt-center");
+		newCenter.attr("class","lt-center"); */
 		let newBottom = $("<div></div>").attr("class","newBottom");
 		$(".newTie").append(newBottom);
 		let newText = $("<p></p>").attr("id","newText").text($(".sendTie-bottom").val());
@@ -80,7 +80,7 @@ $(function(){
 		tieIcon.attr("class","iconBox");
 		ltImgs.attr("class","lt-imgs");
 		newBottom.attr("class","lt-bottom");
-		newCenter.attr("class","lt-center");
+		// newCenter.attr("class","lt-center");
 		newTop.attr("class","lt-top");
 		newBottom.attr("class","lt-text");
 		newTie.removeClass().attr("class","newTie-end");
