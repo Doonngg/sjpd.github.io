@@ -144,9 +144,10 @@
 
 
 #tab2 {
-	display: none;
-	top: 72px;
+	top: 96px;
 	bottom: 72px;
+	padding-top: 0;
+	display: none;
 }
 
 

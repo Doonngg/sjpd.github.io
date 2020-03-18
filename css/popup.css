@@ -59,10 +59,7 @@ h1 {
 	line-height: 24px;
 }
 
-#tab1 {
-	top: 96px;
-	padding-top: 0;
-}
+
 
 /*弹幕显示区*/
 ul {
@@ -77,6 +74,10 @@ ul {
 	word-break: break-all;
 }
 
+#tab1 {
+	top: 96px;
+	padding-top: 0;
+}
 #tab3 {
 	display: none;
 	bottom: 72px;
