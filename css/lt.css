@@ -61,26 +61,72 @@
 /*搜索创建帖子*/
 .bar2{
 	position: absolute;
-	top: 0;
-	right: 0;
 	left: 0;
+	right: 0;
+	top: 0px;
+	height: auto;
+	padding: 16px;
+	padding-top: 32px;
 	display: flex;
 	flex-direction: row;
-	align-items: flex-end;
 	display: none;
+	background-color: #5A9E5C;
+}
+.bar2Top{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.bar2 h1{
+	color: #FFFFFF;
 }
 .bar2 img{
 	width: 20px;
 	height: 20px;
 	margin-left: 8px;
 }
-.bar2 span{
-	position: absolute;
+.bar2Top span{
 	height: 20px;
-	right: 16px;
-	bottom: 0;
 }
-
+#tab2{
+	display: none;
+	top: 72px;
+	bottom: 72px;
+}
+.tuijian{
+	width: 100%;
+	height: 24px;
+	margin-top: 16px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.tieBankuai{
+	width: 30%;
+}
+/*新回复热帖新帖*/
+.tieClass{
+	width: 100%;
+	font-size: 14px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: #FFFFFF;
+}
+.tieTab1,.tieTab2,.tieTab3{
+	flex-grow: 1;
+	padding: 2px;
+	text-align: center;
+}
+.tieTab1:hover,.tieTab2:hover,.tieTab3:hover{
+	border-radius: 16px;
+	background-color: #FFFFFF;
+	color: #5A9E5C;
+}
 .sendTie-top{
 	display: flex;
 	flex-direction: row;
@@ -109,7 +155,7 @@
 	width: 64px;
 	height: 64px;
 	margin-right: 8px;
-	background: url(../img/fatie.png) no-repeat;
+	background: url(../img/plus.png) no-repeat;
 	background-position: center;
 }
 input[type="file"]{
@@ -125,11 +171,12 @@ input[type="file"]{
 	font-size: 15px;
 	color: #707070;
 }
-.sendTie-center select{
+select{
 	border: none;
+	border-radius: 0;
 	outline: none;
 	cursor: pointer;
-	background-color: #FFFFFF;
+	height: 24px;
 }
 .sendTie-bottom{
 	width: 100%;

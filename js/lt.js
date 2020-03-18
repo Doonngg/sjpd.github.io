@@ -36,7 +36,7 @@ $(function(){
 			return;
 		}
 		let newTie = $("<li></li>").attr("class","newTie");
-		$(".tab2").prepend(newTie);
+		$("#tab2").prepend(newTie);
 		/* let newCenter = $("<div></div>").attr("class","newCenter");
 		$(".newTie").append(newCenter);
 		let newB = $("<p></p>").attr("id","newB").text($("#id").text());

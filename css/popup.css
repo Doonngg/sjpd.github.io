@@ -28,45 +28,54 @@ body {
 	left: 0;
 	right: 0;
 	top: 0px;
+	height: 96px;
+	padding: 16px;
+	padding-top: 32px;
 	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.bar1Top{
+	display: flex;
+	width: 100%;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-end;
 }
 
 .webList{
-	width: 40%;
+	width: 100%;
 	height: 24px;
-	padding: 2px;
-	padding-left: 8px;
-	padding-right: 8px;
+	padding: 8px;
+	margin-top: 8px;
 	outline: none;
 	border: 0;
-	border-radius: 0;
+	border-radius: 12px;
 	font-size: 13px;
 	color: #707070;
-	margin-left: 8px;
 	background-color: #EEEEEE;
 }
 h1 {
-	margin-top: 32px;
-	margin-left: 16px;
 	font-size: 1.5rem;
 	line-height: 24px;
 }
-
+#tab1{
+	top: 96px;
+}
 /*弹幕显示区*/
 ul {
 	position: absolute;
-	top: 72px;
-	right: 16px;
-	left: 16px;
+	top: 64px;
+	right: 0;
+	left: 0;
+	padding: 16px;
 	bottom: 128px;
 	list-style: none;
 	overflow: auto;
 	word-break: break-all;
+	z-index: -1;
 }
-.tab2,.tab3{
+#tab3{
 	display: none;
 	bottom: 72px;
 }
@@ -83,7 +92,6 @@ ul::-webkit-scrollbar-thumb {
 	width: auto;
 	min-width: 24px;
 	height: 24px;
-	margin-right: 16px;
 	margin-left: 8px;
 	padding-left: 4px;
 	padding-right: 4px;

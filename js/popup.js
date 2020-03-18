@@ -95,7 +95,7 @@ $(function() {
 		$(this).siblings().css("background-color", "#FFFFFF");
 		const index = $(this).index();
 		$("ul").eq(index).css("display", "block").siblings("ul").css("display", "none");
-		$(".head div").eq(index).show().siblings("div").hide();
+		$(".head").children().eq(index).show().siblings("div").hide();
 	})
 
 
