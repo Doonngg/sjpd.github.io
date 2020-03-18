@@ -20,16 +20,12 @@ body {
 	z-index: 5;
 }
 
-#homeLogo {
-	width: 32px;
-	height: 32px;
-}
 
 .bar1 {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 0px;
+	top: 0;
 	height: 96px;
 	padding: 16px;
 	padding-top: 32px;

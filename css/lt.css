@@ -75,8 +75,8 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 0px;
-	height: auto;
+	top: 0;
+	height: 96px;
 	padding: 16px;
 	padding-top: 32px;
 	display: flex;
