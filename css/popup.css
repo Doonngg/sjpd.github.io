@@ -120,7 +120,6 @@ ul::-webkit-scrollbar-thumb {
 	left: 16px;
 	right: 16px;
 	height: 56px;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 	z-index: 3;
 }
 
