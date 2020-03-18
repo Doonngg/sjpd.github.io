@@ -1,7 +1,7 @@
 /*tab2*/
-.tie,
-	{
+.tie {
 	border-bottom: solid 1px #EEEEEE;
+	margin-bottom: 16px;
 }
 
 /*tab2上*/
@@ -68,6 +68,8 @@
 	justify-content: space-between;
 }
 
+
+
 /*搜索创建帖子*/
 .bar2 {
 	position: absolute;
@@ -80,10 +82,20 @@
 	display: flex;
 	flex-direction: row;
 	display: none;
-	background-color: #5A9E5C;
 }
 
-.bar2Top {
+#createTie {
+	width: 20px;
+	height: 20px;
+}
+.bar2Top{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.bar2Bottom {
+	margin-top: 8px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -97,8 +109,12 @@
 	border: none;
 	height: 24px;
 	border-radius: 0;
+	padding: 8px;
+	font-size: 14px;
 	outline: none;
 	color: #707070;
+	background-color: #EEEEEE;
+	border-radius: 0 12px 12px 0;
 }
 
 /*帖子板块*/
@@ -108,29 +124,19 @@
 	color: #707070;
 	font-size: 14px;
 	line-height: 24px;
-	background-color: #FFFFFF;
+	background-color: #EEEEEE;
+	border-radius: 12px 0 0 12px;
 }
 
 /*新回复热帖新帖*/
 .tieClass {
 	width: 33%;
+	height: 24px;
 	font-size: 14px;
 	color: #707070;
+	background-color: #EEEEEE;
 }
 
-.bar2 h1 {
-	color: #FFFFFF;
-}
-
-.bar2 img {
-	width: 20px;
-	height: 20px;
-	margin-left: 8px;
-}
-
-.bar2Top span {
-	height: 20px;
-}
 
 #tab2 {
 	display: none;
@@ -152,18 +158,10 @@
 .tieTab3:hover {
 	border-radius: 16px;
 	background-color: #FFFFFF;
-	color: #5A9E5C;
+	color: #5BB582;
 }
 
-#createTie {
-	position: fixed;
-	bottom: 88px;
-	right: 16px;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-}
+
 
 .sendTie-top {
 	display: flex;
@@ -238,7 +236,7 @@ select {
 }
 
 .sendTie-button {
-	color: #5A9E5C;
+	color: #5BB582;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

@@ -103,7 +103,7 @@ ul::-webkit-scrollbar-thumb {
 	margin-left: 8px;
 	padding-left: 4px;
 	padding-right: 4px;
-	background-color: #5A9E5C;
+	background-color: #5BB582;
 	border-radius: 16px;
 	color: #ffffff;
 	text-align: center;
@@ -261,7 +261,7 @@ ul::-webkit-scrollbar-thumb {
 /*弹幕时间和id*/
 .dmTime,
 .dmId {
-	color: #4B4B4B;
+	color: #707070;
 	font-size: 12px;
 }
 
@@ -390,7 +390,7 @@ ul::-webkit-scrollbar-thumb {
 
 /*账号设置*/
 #idSet {
-	color: #5A9E5C;
+	color: #5BB582;
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
