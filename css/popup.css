@@ -227,8 +227,8 @@ ul::-webkit-scrollbar-thumb {
 .dmLi {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 16px;
-	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-top: 16px;
 }
 
 /*弹幕盒子左*/
