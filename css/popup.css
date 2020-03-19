@@ -91,7 +91,7 @@ ul {
 	right: 0;
 	left: 0;
 	padding: 16px;
-	bottom: 72px;
+	bottom: 128px;
 	list-style: none;
 	overflow: auto;
 	word-break: break-all;
@@ -143,12 +143,11 @@ ul::-webkit-scrollbar-thumb {
 	display: flex;
 	flex-direction: row;
 	position: fixed;
-	bottom: 16px;
+	bottom: 72px;
 	left: 16px;
 	right: 16px;
 	height: 56px;
 	z-index: 3;
-	display: none;
 }
 
 /*弹幕输入框*/
