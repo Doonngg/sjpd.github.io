@@ -132,6 +132,7 @@ ul::-webkit-scrollbar-thumb {
 	left: 16px;
 	right: 16px;
 	background-color: #FFFFFF;
+	z-index: 10;
 }
 
 /*输入和发送按钮盒子*/
