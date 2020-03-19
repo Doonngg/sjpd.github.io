@@ -102,10 +102,6 @@ ul {
 	top: 104px;
 	padding-top: 0;
 }
-#tab3 {
-	display: none;
-	bottom: 72px;
-}
 
 ul::-webkit-scrollbar {
 	width: 2px;

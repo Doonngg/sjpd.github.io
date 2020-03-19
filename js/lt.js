@@ -1,6 +1,9 @@
 $(function() {
 
-
+	
+	
+	
+	
 
 	$("#createTie").click(function() {
 		$(".fold").slideUp(200, function() {
