@@ -41,5 +41,9 @@ $(function(){
 			angerflag = 0;
 		}
 		
+	});
+	
+	$("#diaryText").focus(function(){
+		$(this).text("");
 	})
 })

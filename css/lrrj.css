@@ -78,6 +78,7 @@
 	margin-top: 16px;
 	margin-bottom: 16px;
 	outline: none;
+	resize: none;
 }
 #ce{
 	position: fixed;
@@ -85,7 +86,17 @@
 	top: 270px;
 	bottom: 0;
 	width: 80px;
+	padding: 0;
 	background-color: #5BB582;
+	overflow: auto;
+}
+#date1{
+	color: #FFFFFF;
+	font-size: 16px;
+	padding: 16px;
+}
+#date1:hover{
+	background-color: #569471;
 }
 #mood div{
 	width: 32px;

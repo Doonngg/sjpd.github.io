@@ -2,7 +2,9 @@ $(function() {
 
 	
 	
-	
+	$("#souTie").focus(function(){
+		$(this).val("");
+	})
 	
 
 	$("#createTie").click(function() {
