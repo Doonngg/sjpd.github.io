@@ -89,6 +89,7 @@
 	bottom: 72px;
 	width: 80px;
 	overflow: auto;
+        z-index: 3;
 	list-style-image: url(../img/li.png);
 }
 #ce::-webkit-scrollbar{
