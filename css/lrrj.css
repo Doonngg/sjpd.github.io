@@ -92,7 +92,7 @@
 	list-style-image: url(../img/li.png);
 }
 #ce::-webkit-scrollbar{
-	width: 0;
+	width: 0px;
 }
 hr{
 	position: fixed;
