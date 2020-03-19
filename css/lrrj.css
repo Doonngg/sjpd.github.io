@@ -80,10 +80,26 @@
 	outline: none;
 }
 #ce{
-	position: absolute;
+	position: fixed;
 	left: 0;
-	top: 0;
+	top: 270px;
 	bottom: 0;
 	width: 80px;
 	background-color: #5BB582;
+}
+#mood div{
+	width: 32px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#mood img{
+	width: 32px;
+	height: 32px;
+}
+#mood p{
+	font-size: 12px;
+	color: #707070;
+	margin-top: 4px;
 }
