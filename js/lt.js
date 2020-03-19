@@ -58,7 +58,7 @@ $(function() {
 		};
 		let banKuaiBox = $("<div></div>").attr("class", "banKuaiBox");
 		$(".newTie").append(banKuaiBox);
-		let banKuai = $("<p></p>").attr("class", "banKuai").text("#" + $("select").val());
+		let banKuai = $("<p></p>").attr("class", "banKuai").text("#" + $(".sendTie-center select").val());
 		$(".banKuaiBox").append(banKuai);
 		let tieButton = $("<div></div>").attr("class", "tieButton1");
 		$(".newTie").append(tieButton);

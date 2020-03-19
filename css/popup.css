@@ -39,20 +39,44 @@ body {
 	justify-content: space-between;
 	align-items: flex-end;
 }
+.bar1Bottom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 16px;
+}
 
 .webList {
-	width: 100%;
+	width: 33%;
 	height: 32px;
-	padding: 8px;
-	margin-top: 16px;
+	padding-left: 8px;
 	outline: none;
 	border: 0;
-	border-radius: 16px;
+	border-radius: 16px 0 0 16px;
 	font-size: 13px;
 	color: #707070;
 	background-color: #EEEEEE;
 }
-
+/*弹幕数量*/
+#dmNum {
+	width: 33%;
+	height: 32px;
+	background-color: #EEEEEE;
+	border-radius: 0 16px 16px 0;
+	color: #707070;
+	padding-left: 8px;
+	line-height: 32px;
+	font-size: 13px;
+}
+#olNum{
+	width: 33%;
+	height: 32px;
+	background-color: #EEEEEE;
+	color: #707070;
+	line-height: 32px;
+	padding-left: 8px;
+	font-size: 13px;
+}
 h1 {
 	font-size: 1.5rem;
 	line-height: 24px;
@@ -67,11 +91,12 @@ ul {
 	right: 0;
 	left: 0;
 	padding: 16px;
-	bottom: 128px;
+	bottom: 72px;
 	list-style: none;
 	overflow: auto;
 	word-break: break-all;
 }
+
 
 #tab1 {
 	top: 104px;
@@ -90,21 +115,6 @@ ul::-webkit-scrollbar-thumb {
 	background-color: #F6F6F6;
 }
 
-/*弹幕数量*/
-#dmNum {
-	width: auto;
-	min-width: 20px;
-	height: 20px;
-	margin-left: 8px;
-	padding-left: 4px;
-	padding-right: 4px;
-	background-color: #5BB582;
-	border-radius: 16px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 20px;
-	font-size: 12px;
-}
 
 #tips {
 	padding: 8px;
@@ -133,11 +143,12 @@ ul::-webkit-scrollbar-thumb {
 	display: flex;
 	flex-direction: row;
 	position: fixed;
-	bottom: 72px;
+	bottom: 16px;
 	left: 16px;
 	right: 16px;
 	height: 56px;
 	z-index: 3;
+	display: none;
 }
 
 /*弹幕输入框*/

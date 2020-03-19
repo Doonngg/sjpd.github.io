@@ -79,7 +79,7 @@ $(function() {
 		//滚轮保持底部
 		$("ul").scrollTop($("ul")[0].scrollHeight);
 		//弹幕数量统计
-		$("#dmNum").text($("#tab1 li").length);
+		$("#dmNum").text( "留言数" + " " + $("#tab1 li").length);
 		$("#text").val("");
 
 		$(".dmRight1 img").click(function() {
