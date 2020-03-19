@@ -12,9 +12,11 @@
 	background-color: #FFFFFF;
 }
 #tab3 {
-	display: none;
 	top: 272px;
 	bottom: 72px;
+	display: flex;
+	flex-direction: row;
+	display: none;
 }
 .bar3 h1{
 	margin-top: 16px;
@@ -83,20 +85,34 @@
 #ce{
 	position: fixed;
 	left: 0;
-	top: 270px;
+	top: 274px;
 	bottom: 72px;
 	width: 80px;
-	padding: 0;
-	background-color: #5BB582;
 	overflow: auto;
+	list-style-image: url(../img/li.png);
+}
+#ce::-webkit-scrollbar{
+	width: 0;
+}
+hr{
+	position: fixed;
+	top: 304px;
+	left: 20px;
+	bottom: 118px;
+	width: 1px;
+	background-color: #EEEEEE;
+	border: none;
+	z-index: -1;
 }
 #date1{
-	color: #FFFFFF;
-	font-size: 16px;
-	padding: 16px;
+	color: #D5D5D5;
+	font-size: 13px;
+	padding-bottom: 32px;
+	margin-left: 16px;
 }
 #date1:hover{
-	background-color: #569471;
+	color: #707070;
+	font-size: 16px;
 }
 #mood div{
 	width: 32px;
@@ -113,4 +129,13 @@
 	font-size: 12px;
 	color: #707070;
 	margin-top: 4px;
+}
+#jilu{
+	position: fixed;
+	right: 16px;
+	top: 290px;
+	left: 88px;
+	bottom: 88px;
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 6px rgba(0,0,0,0.1);
 }
