@@ -22,7 +22,7 @@ $(function() {
 	$(".sendTie-file").click(function() {
 		let newImgBox = $("<div></div>").attr("class", "linshi");
 		$(".sendTie-top").append(newImgBox);
-		let newImg = $("<img>").attr("class", "newImg").attr("src", "img/lt/1.jpg");
+		let newImg = $("<img>").attr("class", "newImg").attr("src", "img/lt/2.jpg");
 		$(".linshi").prepend(newImg);
 		let newDelete = $("<div></div>").attr("class", "newDelete");
 		$(".linshi").append(newDelete);
@@ -122,7 +122,7 @@ $(function() {
 			} else {
 				$(e.target).css({
 					"width": "",
-					"height": "64px",
+					"height": "80px",
 				});
 				flagimg = 0;
 			}
