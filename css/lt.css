@@ -291,7 +291,7 @@ select {
 }
 
 .iconBox {
-	width: 32%;
+	width: 40%;
 	height: auto;
 	display: flex;
 	flex-direction: row;
@@ -313,10 +313,9 @@ select {
 .bkBox p{
 	
 }
-.iconBox img,
-.tieIconBox img {
-	width: 28px;
-	height: 28px;
+.iconBox img{
+	width: 32px;
+	height: 32px;
 }
 
 .xueLiang {
