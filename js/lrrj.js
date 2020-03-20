@@ -1,4 +1,14 @@
 $(function(){
+	
+	
+	$("#ce").on("touchstart",function(e){
+		$(e.target).find("div#liquan").css("border-color","#C6F2D9");
+		$(e.target).siblings().find("div#liquan").css("border-color","#F9F9F9");
+		$(e.target).animate({fontSize : "16px"},80);
+	})
+	
+	
+	
 	let happyflag = 0;
 	$("#happy").click(function(){
 		if(happyflag == 0){

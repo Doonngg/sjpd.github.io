@@ -87,9 +87,8 @@
 	left: 0;
 	top: 274px;
 	bottom: 72px;
-	width: 80px;
+	width: 96px;
 	overflow: auto;
-	list-style-image: url(../img/li.png);
 }
 #ce::-webkit-scrollbar{
 	width: 0px;
@@ -97,10 +96,10 @@
 hr{
 	position: fixed;
 	top: 304px;
-	left: 20px;
+	left: 22px;
 	bottom: 118px;
 	width: 1px;
-	background-color: #EEEEEE;
+	background-color: #D5D5D5;
 	border: none;
 	z-index: -1;
 }
@@ -108,12 +107,23 @@ hr{
 	color: #D5D5D5;
 	font-size: 13px;
 	padding-bottom: 32px;
-	margin-left: 16px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
-#date1:hover{
-	color: #707070;
-	font-size: 16px;
+/*li标签前面的小圆圈*/
+#liquan{
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #5BB582;
+	box-sizing: content-box;
+	border: solid 3px #F9F9F9;
 }
+#recordDate{
+	margin-left: 8px;
+}
+
 #mood div{
 	width: 32px;
 	height: auto;
