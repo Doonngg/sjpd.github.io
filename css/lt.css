@@ -300,7 +300,7 @@ select {
 }
 
 .bkBox {
-	width: 88px;
+	width: 80px;
 	height: 20px;
 	background-color: #C6F2D9;
 	font-size: 12px;
@@ -310,7 +310,9 @@ select {
 	line-height: 20px;
 	text-align: center;
 }
-
+.bkBox p{
+	
+}
 .iconBox img,
 .tieIconBox img {
 	width: 28px;
