@@ -2,14 +2,8 @@ $(function(){
 	
 	
 	$("#ce li").on("touchstart",function(){
-		$(this).animate({
-			fontSize : "16px",
-			color : "#707070"
-			},100);
-		$(this).siblings().css({
-			fontSize : "13px",
-			color : "#D5D5D5"
-			},100);
+		$(this).animate({fontSize : "16px"},100).css("color","#707070");
+		$(this).siblings().css({fontSize : "13px"},100).css("color","#D5D5D5");
 		$(this).children("div").css("borderColor","#C6F2D9");
 		$(this).siblings().children("div").css("borderColor","#f9f9f9");
 	})
