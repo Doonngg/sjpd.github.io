@@ -6,6 +6,7 @@ $(function(){
 		$(this).siblings().css({fontSize : "13px"},100).css("color","#D5D5D5");
 		$(this).children("div").css("borderColor","#C6F2D9");
 		$(this).siblings().children("div").css("borderColor","#f9f9f9");
+		// console.log($(this).children("p").text());
 	})
 	
 	
