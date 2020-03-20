@@ -147,3 +147,26 @@ hr{
 	left: 88px;
 	bottom: 88px;
 }
+#jianlue{
+	font-size: 13px;
+	line-height: 24px;
+	color: #707070;
+}
+#recordText{
+	font-size: 14px;
+	color: #5BB582;
+	display: block;
+	padding: 4px;
+	padding-left: 8px;
+	margin-top: 8px;
+	background-color: #C6F2D9;
+	border-radius: 18px;
+}
+#recordImg{
+	height: 88px;
+	overflow: hidden;
+	margin-top: 8px;
+}
+#recordImg img{
+	height: 88px;
+}
