@@ -1,10 +1,11 @@
 $(function(){
 	
 	
-	$("#ce").on("touchstart",function(e){
-		$(e.target).find("div#liquan").css("border-color","#C6F2D9");
-		$(e.target).siblings().find("div#liquan").css("border-color","#F9F9F9");
-		$(e.target).animate({fontSize : "16px"},80);
+	$("#ce li").on("touchstart",function(){
+		$(this).animate({fontSize : "16px"},100);
+		$(this).siblings().css({fontSize : "13px"},100);
+		$(this).children("div").css("borderColor","#C6F2D9");
+		$(this).siblings().children("div").css("borderColor","#f9f9f9");
 	})
 	
 	
