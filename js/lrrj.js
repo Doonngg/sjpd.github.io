@@ -10,6 +10,19 @@ $(function(){
 	})
 	
 	
+	$(".bar3Bottom button").click(function(){
+		$(this).css({
+			"backgroundColor":"#5BB582",
+			"color" : "#FFFFFF"
+			});
+		$(this).siblings().css({
+			"backgroundColor":"#EEEEEE",
+			"color":"#707070"
+			});
+		const index = $(this).index();
+		$("#tab3").children("li").eq(index).css("display","block").siblings("li").css("display", "none");;
+	})
+	
 	
 	let happyflag = 0;
 	$("#happy").click(function(){
