@@ -11,8 +11,9 @@
 	display: none;
 }
 #tab3 {
-	top: 272px;
+	top: 104px;
 	bottom: 72px;
+	padding: 0;
 	display: flex;
 	flex-direction: row;
 	display: none;
@@ -43,6 +44,7 @@
 	font-size: 13px;
 	text-align: left;
 	padding-left: 8px;
+	background-color: #EEEEEE;
 }
 #recommend{
 	width: 33%;
@@ -53,6 +55,7 @@
 	font-size: 13px;
 	text-align: left;
 	padding-left: 8px;
+	background-color: #EEEEEE;
 }
 #opened{
 	width: 33%;
@@ -63,12 +66,33 @@
 	font-size: 13px;
 	text-align: left;
 	padding-left: 8px;
+	background-color: #EEEEEE;
 }
-#location{
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: #FFFFFF;
+.banner{
+	display: flex;
+	flex-direction: row;
+	margin-top: 16px;
+	height: 120px;
+}
+.bannerLeft{
+	width: 60%;
+	height: 100%;
+	background-color: #5BB582;
+}
+.bannerRight{
+	width: 40%;
+	height: 100%;
+	background-color: #5A9E5C;
+}
+.hotList{
+	display: flex;
+	flex-direction: row;
+	margin-top: 16px;
+	margin-left: 16px;
+}
+.hotList p{
+	font-size: 13px;
+	border-bottom: 4px solid #5BB582;
 }
 #date{
 	font-size: 14px;
@@ -119,23 +143,29 @@
 	outline: none;
 	resize: none;
 }
-#ce{
-	position: fixed;
-	left: 0;
-	top: 274px;
-	bottom: 72px;
-	width: 96px;
-	overflow: auto;
+.tab2Bottom{
+	display: flex;
+	flex-direction: row;
+}
+#tab2BottomLeft{
+	width: 30%;
+	position: relative;
+	top: 0;
+	overflow: hidden;
 }
 #ce::-webkit-scrollbar{
 	width: 0px;
 }
+#tab2BottomRight{
+	width: 80%;
+	height: auto;
+}
 hr{
-	position: fixed;
-	top: 304px;
-	left: 22px;
-	bottom: 72px;
+	position: absolute;
+	height: 100%;
 	width: 1px;
+	left: 22px;
+	margin-top: 4px;
 	background-color: #D5D5D5;
 	border: none;
 	z-index: -1;

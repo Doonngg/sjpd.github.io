@@ -1,7 +1,7 @@
 $(function(){
 	
 	
-	$("#ce li").on("touchstart",function(){
+	$("#tab2BottomLeft li").on("touchstart",function(){
 		$(this).animate({fontSize : "16px"},100).css("color","#707070");
 		$(this).siblings().css({fontSize : "13px"},100).css("color","#D5D5D5");
 		$(this).children("div").css("borderColor","#C6F2D9");
