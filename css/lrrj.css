@@ -9,7 +9,6 @@
 	display: flex;
 	flex-direction: column;
 	display: none;
-	background-color: #FFFFFF;
 }
 #tab3 {
 	top: 272px;
@@ -26,6 +25,44 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-end;
+}
+.bar3Bottom{
+	width: 100%;
+	height: 32px;
+	margin-top: 16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#rank{
+	width: 33%;
+	border: none;
+	border-radius: 16px 0 0 16px;
+	outline: none;
+	color: #707070;
+	font-size: 13px;
+	text-align: left;
+	padding-left: 8px;
+}
+#recommend{
+	width: 33%;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	color: #707070;
+	font-size: 13px;
+	text-align: left;
+	padding-left: 8px;
+}
+#opened{
+	width: 33%;
+	border: none;
+	border-radius: 0 16px 16px 0;
+	outline: none;
+	color: #707070;
+	font-size: 13px;
+	text-align: left;
+	padding-left: 8px;
 }
 #location{
 	width: 20px;
