@@ -42,6 +42,15 @@ $(function() {
 		}
 		let newTie = $("<li></li>").attr("class", "newTie");
 		$("#tab2").prepend(newTie);
+		let newTop = $("<div></div>").attr("class", "newTop");
+		$(".newTie").append(newTop);
+		let ltImgs = $("<div></div>").attr("class", "ltImgs");
+		$(".newTop").append(ltImgs);
+		for (let i = 0; i < $(".newImg").length; i++) {
+			let img = $("<img>").attr("src", $(".newImg").attr("src"));
+			$(".ltImgs").append(img);
+		};
+		//个人信息
 		/* let newCenter = $("<div></div>").attr("class","newCenter");
 		$(".newTie").append(newCenter);
 		let newB = $("<p></p>").attr("id","newB").text($("#id").text());
@@ -53,18 +62,11 @@ $(function() {
 		$(".newTie").append(newBottom);
 		let newText = $("<p></p>").attr("id", "newText").text($(".sendTie-bottom").val());
 		$(".newBottom").append(newText);
-		let newTop = $("<div></div>").attr("class", "newTop");
-		$(".newTie").append(newTop);
-		let ltImgs = $("<div></div>").attr("class", "ltImgs");
-		$(".newTop").append(ltImgs);
-		for (let i = 0; i < $(".newImg").length; i++) {
-			let img = $("<img>").attr("src", $(".newImg").attr("src"));
-			$(".ltImgs").append(img);
-		};
-		let banKuaiBox = $("<div></div>").attr("class", "banKuaiBox");
+		//板块
+		/* let banKuaiBox = $("<div></div>").attr("class", "banKuaiBox");
 		$(".newTie").append(banKuaiBox);
 		let banKuai = $("<p></p>").attr("class", "banKuai").text($(".sendTie-center select").val());
-		$(".banKuaiBox").append(banKuai);
+		$(".banKuaiBox").append(banKuai); */
 		let tieButton = $("<div></div>").attr("class", "tieButton1");
 		$(".newTie").append(tieButton);
 		let xueLiang = $("<div></div>").attr("class", "xueLiang1");
@@ -73,19 +75,19 @@ $(function() {
 		$(".xueLiang1").append(xueLiangVal);
 		let huiFuVal = $("<span></span>").attr("class", "huiFuVal").text("留言 " + 100);
 		$(".xueLiang1").append(huiFuVal);
-		let tieIcon = $("<div></div>").attr("class", "tieIconBox");
+		/* let tieIcon = $("<div></div>").attr("class", "tieIconBox");
 		$(".tieButton1").append(tieIcon);
 		let zan = $("<img>").attr("class", "zan").attr("src", "img/jiaxue.png");
 		$(".tieIconBox").append(zan);
 		let no = $("<img>").attr("class", "no").attr("src", "img/jianxue.png");
-		$(".tieIconBox").append(no);
+		$(".tieIconBox").append(no); */
 		xueLiang.attr("class", "xueLiang")
-		tieButton.attr("class", "tieButton")
-		banKuaiBox.attr("class", "bkBox");
-		tieIcon.attr("class", "iconBox");
+		tieButton.attr("class", "tieButtom")
+		// banKuaiBox.attr("class", "bkBox");板块
+		// tieIcon.attr("class", "iconBox");
 		ltImgs.attr("class", "lt-imgs");
 		newBottom.attr("class", "lt-bottom");
-		// newCenter.attr("class","lt-center");
+		// newCenter.attr("class","lt-center");个人信息
 		newTop.attr("class", "lt-top");
 		newBottom.attr("class", "lt-text");
 		newTie.removeClass().attr("class", "tie");

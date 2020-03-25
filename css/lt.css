@@ -1,13 +1,12 @@
 /*tab2*/
 .tie {
-	border-bottom: solid 1px #EEEEEE;
 	margin-bottom: 16px;
 	margin-top: 16px;
+	background-color: #FFFFFF;
 }
 
 /*tab2上*/
-.lt-top,
-.newTop {
+.lt-top {
 	width: 100%;
 	height: auto;
 }
@@ -27,7 +26,6 @@
 .lt-imgs img {
 	height: 80px;
 	margin-right: 1px;
-	margin-top: 16px;
 }
 
 /*tab2图片*/
@@ -67,6 +65,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding: 16px;
 }
 
 
@@ -280,13 +279,13 @@ select {
 	position: relative;
 }
 
-.tieButton {
+.tieButtom {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-top: 16px;
-	margin-bottom: 16px;
+	padding: 16px;
+	padding-top: 0;
 }
 
 .iconBox {
