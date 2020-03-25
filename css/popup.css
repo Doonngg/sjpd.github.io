@@ -136,13 +136,13 @@ ul::-webkit-scrollbar-thumb {
 #tips {
 	position: fixed;
 	top: 200px;
-	left: 64px;
-	right: 64px;
+	left: 80px;
+	right: 80px;
 	display: block;
 	background-color: #FFFFFF;
 	border: solid 1px #D5D5D5;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-	padding: 24px;
+	padding: 8px;
 	text-align: center;
 	border-radius: 8px;
 	font-size:16px;
