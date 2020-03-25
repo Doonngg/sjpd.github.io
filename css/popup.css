@@ -32,6 +32,18 @@ body {
 	flex-direction: column;
 }
 
+#star{
+	width: 18px;
+	height: 18px;
+}
+#starTips{
+	position: fixed;
+	top: 56px;
+	right: 8px;
+	font-size: 8px;
+	color: #5BB582;
+	display: none;
+}
 .bar1Top {
 	display: flex;
 	width: 100%;

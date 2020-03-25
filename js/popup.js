@@ -9,8 +9,28 @@ $(function() {
 	$("#data3").click(function() {
 
 	})
-
-
+	
+	
+	let starFlag = 0;
+	$("#star").click(function(){
+		if(starFlag == 0){
+			$("#star").attr("src","img/starSelect.png");
+			$("#starTips").show();
+			$("#starTips").animate({top :'40px'},function(){
+				$("#starTips").hide();
+			});
+			$("#starTips").animate({top:"56px"});
+			starFlag = 1;
+		} else{
+			$("#star").attr("src","img/star.png");
+			$("#starTips").text("已取消").show();
+			$("#starTips").animate({top :'40px'},function(){
+				$("#starTips").text("已推荐").hide();
+			});
+			$("#starTips").animate({top:"56px"});
+			starFlag = 0;
+		}
+	})
 
 	//dock栏头像
 	$("#bar").attr("src", $("#tx img").attr("src"));
