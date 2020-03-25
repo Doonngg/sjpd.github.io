@@ -19,7 +19,7 @@ $(function() {
 			$("#starTips").animate({top :'160px'},function(){
 				$("#starTips").hide();
 			});
-			$("#starTips").animate({top:"200px"});
+			$("#starTips").animate({top:"200px"},1);
 			starFlag = 1;
 		} else{
 			$("#star").attr("src","img/star.png");
@@ -27,7 +27,7 @@ $(function() {
 			$("#starTips").animate({top :'160px'},function(){
 				$("#starTips").text("已推荐").hide();
 			});
-			$("#starTips").animate({top:"200px"});
+			$("#starTips").animate({top:"200px"},1);
 			starFlag = 0;
 		}
 	})
