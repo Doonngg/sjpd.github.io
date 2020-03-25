@@ -16,7 +16,7 @@ $(function() {
 		if(starFlag == 0){
 			$("#star").attr("src","img/starSelect.png");
 			$("#starTips").show();
-			$("#starTips").animate({top :'180px'},function(){
+			$("#starTips").animate({top :'160px'},function(){
 				$("#starTips").hide();
 			});
 			$("#starTips").animate({top:"200px"});
@@ -24,7 +24,7 @@ $(function() {
 		} else{
 			$("#star").attr("src","img/star.png");
 			$("#starTips").text("已取消").show();
-			$("#starTips").animate({top :'180px'},function(){
+			$("#starTips").animate({top :'160px'},function(){
 				$("#starTips").text("已推荐").hide();
 			});
 			$("#starTips").animate({top:"200px"});
