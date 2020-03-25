@@ -38,10 +38,19 @@ body {
 }
 #starTips{
 	position: fixed;
-	top: 56px;
-	right: 8px;
-	font-size: 8px;
-	color: #5BB582;
+	top: 200px;
+	left: 80px;
+	right: 80px;
+	display: block;
+	background-color: #FFFFFF;
+	border: solid 1px #D5D5D5;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+	padding: 8px;
+	text-align: center;
+	border-radius: 8px;
+	font-size:16px;
+	letter-spacing:4px;
+	color: #707070;
 	display: none;
 }
 .bar1Top {
@@ -125,15 +134,20 @@ ul::-webkit-scrollbar-thumb {
 
 
 #tips {
-	padding: 8px;
-	background: #000;
-	color: #ffffff;
-	text-align: center;
-	top: 200px;
-	right: 20%;
-	left: 20%;
 	position: fixed;
-	box-shadow: 0 3px 6px #D5D5D5;
+	top: 200px;
+	left: 64px;
+	right: 64px;
+	display: block;
+	background-color: #FFFFFF;
+	border: solid 1px #D5D5D5;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+	padding: 24px;
+	text-align: center;
+	border-radius: 8px;
+	font-size:16px;
+	letter-spacing:2px;
+	color: #707070;
 	display: none;
 	z-index: 99;
 }
